@@ -1,5 +1,5 @@
 class Sidebar {
-  get accessSidebar() {
+  get sidebarButton() {
     return cy.get("[id='react-burger-menu-btn']");
   }
 

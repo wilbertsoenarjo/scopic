@@ -5,6 +5,7 @@ declare global {
     interface Chainable {
       visitSauceDemo(): void;
       login(user: User): void;
+      verifyLogin(): void;
       logout(): void;
     }
   }

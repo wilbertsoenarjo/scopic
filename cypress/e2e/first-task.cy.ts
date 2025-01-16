@@ -1,6 +1,5 @@
 import { users } from "../fixtures/constant/user";
 import login from "../utils/pages/login";
-import product from "../utils/pages/product";
 
 describe("Task 1", () => {
   const standardUser = users["Standard User"];
@@ -10,8 +9,7 @@ describe("Task 1", () => {
 
   it("Should be able to login and logout", () => {
     cy.login(standardUser);
-    cy.url().should("have.text", "https://www.saucedemo.com/inventory.html");
-    product.productTitle.should("be.visible");
+    cy.verifyLogin();
     cy.logout();
   });
 

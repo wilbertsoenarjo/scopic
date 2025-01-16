@@ -1,4 +1,8 @@
 {
+  "scripts": {
+    "cy:run_e2e": "npx cypress open --config-file cypress/configs/e2e-config.ts",
+    "cy:run_api": "npx cypress open --config-file cypress/configs/api-config.ts"
+  },
   "devDependencies": {
     "cypress": "^13.17.0",
     "typescript": "^5.7.3"
